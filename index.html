@@ -74,7 +74,13 @@
             border-color: #6d6d6d;
         }
 
-        /* Removed .hero-bg styles */
+        /* Styling for the new gallery section images */
+        .gallery-img {
+            aspect-ratio: 4/3; /* Maintain a consistent landscape ratio */
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 
@@ -287,6 +293,51 @@
                     <a href="tel:+17789521560" class="text-black underline font-semibold hover:text-gray-700 transition duration-150">
                         Call us at +1 778-952-1560 if you have any questions about your coverage.
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Gallery Section -->
+        <section id="gallery" class="py-20 bg-gray-900 text-white border-b border-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+                <h3 class="text-4xl font-bold text-center mb-12">A Glimpse Inside</h3>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Image Placeholder 1: Reception Area - REPLACE SRC WITH YOUR IMAGE URL -->
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x450/171717/FFFFFF?text=Reception+Area" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x450/171717/FFFFFF?text=Reception';"
+                            alt="A clean, welcoming reception area in the clinic."
+                            class="gallery-img">
+                    </div>
+                    
+                    <!-- Image Placeholder 2: Treatment Room - REPLACE SRC WITH YOUR IMAGE URL -->
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x450/171717/FFFFFF?text=Treatment+Room" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x450/171717/FFFFFF?text=Treatment';"
+                            alt="A serene treatment room with an acupuncture bed."
+                            class="gallery-img">
+                    </div>
+
+                    <!-- Image Placeholder 3: Herbal Display/Shelf - REPLACE SRC WITH YOUR IMAGE URL -->
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x450/171717/FFFFFF?text=Herbal+Display" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x450/171717/FFFFFF?text=Herbal+Display';"
+                            alt="Display of Chinese herbal medicine."
+                            class="gallery-img">
+                    </div>
+
+                    <!-- Image Placeholder 4: Exterior/Signage - REPLACE SRC WITH YOUR IMAGE URL -->
+                    <div class="rounded-lg overflow-hidden shadow-xl">
+                        <img 
+                            src="https://placehold.co/600x450/171717/FFFFFF?text=Exterior+View" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x450/171717/FFFFFF?text=Exterior';"
+                            alt="Exterior view or clean signage for the clinic."
+                            class="gallery-img">
+                    </div>
                 </div>
             </div>
         </section>
